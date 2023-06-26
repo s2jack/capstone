@@ -8,13 +8,38 @@
   src: url('fonts/Lato-Black.ttf');
 }
 
+.lato {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.lato-black {
+  font-family: Lato-black, Arial, Helvetica, sans-serif;
+}
+
+.red {
+  color: #ec5242
+}
+
+.dark {
+  color: #272a31;
+}
+
+.light {
+  color: #d3d3d3;
+}
+
+.light-bg {
+  background-color: #d3d3d3;
+}
+
 #menu-list,
 #enroll-button {
   display: none;
 }
 
 h1,
-h2 {
+h2,
+p {
   margin-block-end: 0;
   margin-block-start: 0;
 }
@@ -88,7 +113,7 @@ navbar {
   top: 3vh;
   background-image: url("/images/89780.jpg");
   width: 100vw;
-  height: 97vh;
+  height: 60vh;
   background-size: cover;
   z-index: -1;
   background-repeat: no-repeat;
@@ -100,21 +125,37 @@ navbar {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 3vh;
-}
-
-.lato {
-  font-family: Lato, Arial, Helvetica, sans-serif;
-}
-
-.lato-black {
-  font-family: Lato-black, Arial, Helvetica, sans-serif;
+  gap: 2.4vh;
+  width: 95%;
+  height: 70%;
 }
 
 #greeting-message {
   font-weight: 400;
+  font-size: 4vw;
 }
 
 #main-message {
-  
+  font-size: 6vw;
+  overflow-wrap: break-word;
+  width: 67%;
+}
+
+#det-message-container {
+  padding: 10px;
+  border: solid 2px #fff;
+  width: 95%;
+}
+
+#det-message {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+#date-message {
+  font-size: 20px;
+}
+
+#location-message {
+  font-size: 14px;
 }
