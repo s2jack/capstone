@@ -50,7 +50,8 @@
 
 #menu-list,
 #enroll-button,
-#closeIcon {
+#closeIcon,
+#indicator0 {
   display: none;
 }
 
@@ -92,11 +93,6 @@ body {
   text-align: center;
 }
 
-#user-menu-bar {
-  width: 100vw;
-  height: 3.5vh;
-}
-
 #user-menu li {
   font-weight: 400;
 }
@@ -121,6 +117,12 @@ body {
   align-items: center;
   gap: 12px;
   color: #fff;
+}
+
+#user-menu-bar {
+  width: 100vw;
+  height: 3.5vh;
+  padding-right: 0;
 }
 
 navbar {
@@ -184,7 +186,7 @@ main {
 }
 
 #main-message {
-  font-size: 6vw;
+  font-size: 7vw;
   overflow-wrap: break-word;
   width: 80%;
   text-align: center;

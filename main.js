@@ -24,16 +24,6 @@ const openMobileMenu = () => {
     element.addEventListener('click', closeMobileMenu)
   });
 
-  const aboutLink = menuElements[0]
-  const programLink = menuElements[1]
-  
-  programLink.addEventListener('click', function () {
-    window.location.href = '#program'
-  })
-
-  aboutLink.addEventListener('click', function() {
-    window.location.href = 'about.html'
-  })
   closeIcon.addEventListener('click', closeMobileMenu)
 }
 
