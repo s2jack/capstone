@@ -36,6 +36,10 @@
   color: #fff;
 }
 
+.white-bg {
+  background-color: #fff;
+}
+
 .light {
   color: #d3d3d3;
 }
@@ -83,7 +87,8 @@ body {
 
 .section-heading {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 24px;
+  text-align: center;
 }
 
 #user-menu-bar {
@@ -149,18 +154,12 @@ main {
   flex-direction: column;
 }
 
-#home {
-  width: 100vw;
-  height: 60vh;
-}
-
-#home-bg-container {
+#about-bg-container {
+  padding-top: 36px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  left: 0;
-  top: 3vh;
   background-image: url("/images/89780.jpg");
   width: 100vw;
   height: 60vh;
@@ -170,11 +169,11 @@ main {
   background-position: center;
 }
 
-#home-content-container {
+#about-content-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 2.4vh;
   width: 95%;
   height: 70%;
@@ -188,225 +187,150 @@ main {
 #main-message {
   font-size: 6vw;
   overflow-wrap: break-word;
-  width: 67%;
+  width: 80%;
+  text-align: center;
 }
 
 #det-message-container {
   padding: 10px;
-  border: solid 2px #fff;
-  width: 95%;
+  border: solid 2px #d3d3d3;
+  width: 90%;
 }
 
 #det-message {
+  text-align: center;
   font-size: 12px;
   line-height: 20px;
 }
 
-#date-message {
-  font-size: 20px;
+#info-message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-#location-message {
+#contact-message {
+  text-align: center;
   font-size: 14px;
 }
 
-#program-container {
-  background-image: url("images/program-bg-hq.jpg");
-  width: 100vw;
-  height: 70vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-}
-
-#heading-container,
-#heading-container2,
-#heading-container3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 6vh;
-  gap: 5px;
+#email-message {
+  text-decoration: underline;
+  font-size: 14px;
 }
 
 .indicator {
-  width: 40%;
-  height: 2px;
+  width: 20%;
+  height: 1px;
   border: solid 1px #ec5242;
   border-radius: 2px;
+  max-width: 115px;
 }
 
-#program-cards-container {
-  display: grid;
-  gap: 10px;
-  width: 100%;
-  height: 80%;
-  grid-template-rows: repeat(5, 1fr);
+#howtojoin-text {
+  text-align: center;
+  width: 80%;
 }
 
-.pr-card {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  background: rgba(78, 82, 90, 0.7);
-  gap: 20px;
-}
-
-#pr-card1 {
-  grid-row: 1/2;
-}
-
-#pr-card2 {
-  grid-row: 2/3;
-}
-
-.pr-card3 {
-  grid-row: 3/4;
-}
-
-.pr-card4 {
-  grid-row: 4/5;
-}
-
-.pr-card5 {
-  grid-row: 5/6;
-}
-
-.pr-card-icon {
-  padding-left: 24px;
-  font-size: 40px;
-}
-
-.pr-heading {
-  min-width: 112px;
-  font-size: 16px;
-}
-
-.pr-desc-text {
-  font-size: 14px;
-}
-
-#program-link {
-  text-decoration: underline;
-}
-
-#indicator2 {
-  width: 10%;
-}
-
-#speakers,
-#partners {
-  padding-bottom: 15px;
-}
-
-#sp-img1 {
-  background-image: url("images/sp-image1.png");
-}
-
-#sp-img2 {
-  background-image: url("images/sp-image2.png");
-}
-
-#sp-img3 {
-  background-image: url("images/sp-image3.png");
-}
-
-#sp-img4 {
-  background-image: url("images/sp-image4.png");
-}
-
-#sp-img5 {
-  background-image: url("images/sp-image5.png");
-}
-
-#sp-img6 {
-  background-image: url("images/sp-image6.png");
-}
-
-.sp-img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 121.5px;
-  height: 121.5px;
-  min-width: 40.5px;
-}
-
-.sp-indicator {
-  border: solid 1px #3e3e3e;
-  border-radius: 2px;
-  width: 48px;
-}
-
-#speaker-cards-container {
+#howtojoin-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.speaker-card {
-  display: flex;
-  gap: 10px;
-  padding: 0 10px;
-  border: solid 1px #d3d3d3;
-}
-
-.sp-info {
-  padding-top: 15px;
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.sp-name {
-  font-size: 15px;
-}
-
-.sp-title {
-  font-size: 13px;
-}
-
-.sp-bio {
-  font-size: 12px;
-  line-height: 14px;
-}
-
-#partner-logo-container {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 24px;
 }
 
-.partner-logo {
-  width: 150px;
-  height: 60px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+#howtojoin-txt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
-#logo1 {
-  background-image: url("images/microverselogo.png");
+#howtojoin-img {
+  background-image: url('images/CWA_logo_new-howtojoin.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 90%;
+  height: 100px;
+  border: solid 1px #d3d3d3;
+  max-width: 400px;
+}
+
+#testamonials-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border: solid 1px #d3d3d3;
+}
+
+#testamonials-text {
+  width: 80%;
+  text-align: center;
+}
+
+#testamonial-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.test-card {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 90%;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#test-card1 {
+  background-image: url('images/testamonial-1.jpg');
+}
+
+#test-card2 {
+  background-image: url('images/testamonial-2.jpg');
+}
+
+.test-date-txt {
+  font-size: 32px;
+}
+
+.test-detail-txt {
+  text-align: center;
+}
+
+#footer-logo {
+  background-image: url("images/CWA_logo_new-white.png");
+  min-width: 160px;
+  min-height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 footer {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding-top: 24px;
-  gap: 12px;
+  justify-content: space-around;
+  gap: 36px;
+  width: 100vw;
+  min-height: 180px;
 }
 
 #copyright-txt {
-  width: 70%;
-  text-align: center;
+  font-size: 14px;
 }
