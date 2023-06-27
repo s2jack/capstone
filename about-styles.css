@@ -51,7 +51,8 @@
 #menu-list,
 #enroll-button,
 #closeIcon,
-#indicator0 {
+#indicator0,
+#det-message {
   display: none;
 }
 
@@ -198,7 +199,7 @@ main {
   width: 90%;
 }
 
-#det-message {
+#det-message-mob {
   text-align: center;
   font-size: 12px;
   line-height: 20px;
@@ -258,7 +259,7 @@ main {
   background-position: center;
   background-size: contain;
   width: 90%;
-  height: 100px;
+  height: 145px;
   border: solid 1px #d3d3d3;
   max-width: 400px;
 }
@@ -315,10 +316,49 @@ main {
   text-align: center;
 }
 
+#partners {
+  padding-bottom: 15px;
+}
+
+#partner-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+#heading-container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 6vh;
+  gap: 5px;
+}
+
+.partner-logo {
+  width: 90px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.part-logo-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+#logo1 {
+  background-image: url("images/microverselogo.png");
+}
+
 #footer-logo {
-  background-image: url("images/CWA_logo_new-white.png");
+  background-image: url("images/CWA_logo_new.png");
   min-width: 160px;
-  min-height: 80px;
+  min-height: 40px;
   background-size: contain;
   background-repeat: no-repeat;
 }

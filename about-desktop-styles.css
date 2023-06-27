@@ -49,7 +49,8 @@
 }
 
 #hamburger-icon,
-#join-btn {
+#join-btn,
+#det-message-mob {
   display: none;
 }
 
@@ -108,4 +109,36 @@ navbar {
 
 #about-bg-container {
   height: 100vh;
+}
+
+#main-message {
+  font-size: 4vw;
+  width: 55%;
+  text-transform: uppercase;
+}
+
+#indicator0 {
+  display: block;
+  width: 3%;
+}
+
+#det-message-container {
+  width: 65%;
+  padding: 24px;
+}
+
+#det-message {
+  display: block;
+  text-align: center;
+}
+
+#howtojoin-container {
+  gap: 36px;
+  padding: 48px 0;
+}
+
+#testamonial-cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
 }
