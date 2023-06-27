@@ -162,7 +162,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/images/89780.jpg");
+  background-image: url("images/89780.jpg");
   width: 100vw;
   height: 60vh;
   background-size: cover;
