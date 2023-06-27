@@ -111,7 +111,7 @@ Github Pages feature
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **s2jack**
+👤 **Mehmet Selçuk Güler**
 
 - GitHub: [@s2jack](https://github.com/s2jack)
 - Twitter: [@1stGuler](https://twitter.com/1stGuler)
