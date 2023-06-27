@@ -11,8 +11,8 @@
   </head>
   <body>
     <header>
-      <div id="user-menu-bar">
-        <div id="social-media-icons">
+      <div id="user-menu-bar" class="white">
+        <div id="social-media-icons" class="white">
           <a href="https://www.facebook.com">
             <i class="fa-solid fa-brands fa-facebook-f"></i>
           </a>
@@ -20,7 +20,7 @@
             <i class="fa-solid fa-brands fa-twitter"></i>
           </a>
         </div>
-        <ul id="user-menu">
+        <ul id="user-menu" class="white">
           <li id="language" class="user-menu-element lato">English</li>
           <li id="profile" class="user-menu-element lato">Profile</li>
           <li id="logOut" class="user-menu-element lato">Logout</li>
@@ -63,22 +63,130 @@
       <section id="program">
         <div id="program-container">
           <div id="heading-container">
-            <h2 class="lato">Main Program</h2>
-            <div id="indicator1"></div>
+            <h2 class="lato white section-heading" id="program-heading">Main Program</h2>
+            <div id="indicator1" class='indicator red-bg'></div>
           </div>
           <div id="program-cards-container">
-            <div id="pr-card1">
-              <i id="pr-icon-1" class="pr-card-icon"></i>
-              <p id="pr-heading-1" class="pr-heading"></p>
-              <p id="pr-desc-1" class="pr-desc-text"></p>
+            <div id="pr-card1" class="pr-card">
+              <i id="pr-icon-1" class="pr-card-icon fa-solid fa-graduation-cap white"></i>
+              <p id="pr-heading-1" class="pr-heading lato red">Lecture</p>
+              <p id="pr-desc-1" class="pr-desc-text white lato">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+            </div>
+            <div id="pr-card2" class="pr-card">
+              <i id="pr-icon-2" class="pr-card-icon fa-solid fa-graduation-cap white"></i>
+              <p id="pr-heading-2" class="pr-heading lato red">CC Exhibition</p>
+              <p id="pr-desc-2" class="pr-desc-text white lato">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+            </div>
+            <div id="pr-card3" class="pr-card">
+              <i id="pr-icon-3" class="pr-card-icon fa-solid fa-graduation-cap white"></i>
+              <p id="pr-heading-3" class="pr-heading lato red">Forum</p>
+              <p id="pr-desc-3" class="pr-desc-text white lato">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+            </div>
+            <div id="pr-card4" class="pr-card">
+              <i id="pr-icon-4" class="pr-card-icon fa-solid fa-graduation-cap white"></i>
+              <p id="pr-heading-4" class="pr-heading lato red">Workshop</p>
+              <p id="pr-desc-4" class="pr-desc-text white lato">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
+            </div>
+            <div id="pr-card5" class="pr-card">
+              <i id="pr-icon-5" class="pr-card-icon fa-solid fa-graduation-cap white"></i>
+              <p id="pr-heading-5" class="pr-heading lato red">CC Ignite</p>
+              <p id="pr-desc-5" class="pr-desc-text white lato">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </p>
             </div>
           </div>
-          <a id="program-link">SEE THE WHOLE PROGRAM</a>
+          <a id="program-link" class="lato white">SEE THE WHOLE PROGRAM</a>
+        </div>
+      </section>
+      <section id="speakers">
+        <div id="heading-container2">
+          <h2 class="lato dark section-heading" id="speakers-heading">Featured Speakers</h2>
+          <div id="indicator2" class='indicator red-bg'></div>
+        </div>
+        <div id="speaker-cards-container">
+          <div id="speaker-card1" class="speaker-card">
+            <div id="sp-img1" class="sp-img"></div>
+            <div id="sp-info1" class="sp-info">
+              <p id="sp-name1" class="sp-name lato-black dark">Yochai Benkler</p>
+              <p id="sp-title1" class="sp-title lato red">Berkman Professor of Computer Science at Harvard</p>
+              <div class="sp-indicator"></div>
+              <p id="sp-bio1" class="sp-bio lato dark">Benkler studies commons based peer production, and published his seminal book The Wealth of Networks in 2006.</p> 
+            </div>  
+          </div>
+          <div id="speaker-card2" class="speaker-card">
+            <div id="sp-img2" class="sp-img"></div>
+            <div id="sp-info2" class="sp-info">
+              <p id="sp-name2" class="sp-name lato-black dark">Sammy Berky</p>
+              <p id="sp-title2" class="sp-title lato red">CTO at Google Dev Academy</p>
+              <div class="sp-indicator"></div>
+              <p id="sp-bio2" class="sp-bio lato dark">Sammy has a lot of experience about NLP technics and AI integration into Learning process.</p> 
+            </div>
+          </div>
+          <div id="speaker-card3" class="speaker-card">
+            <div id="sp-img3" class="sp-img"></div>
+            <div id="sp-info3" class="sp-info">
+              <p id="sp-name3" class="sp-name lato-black dark">Sammy Berky</p>
+              <p id="sp-title3" class="sp-title lato red">CTO at Google Dev Academy</p>
+              <div class="sp-indicator"></div>
+              <p id="sp-bio3" class="sp-bio lato dark">Sammy has a lot of experience about NLP technics and AI integration into Learning process.</p> 
+            </div>
+          </div>
+          <div id="speaker-card4" class="speaker-card">
+            <div id="sp-img4" class="sp-img"></div>
+            <div id="sp-info4" class="sp-info">
+              <p id="sp-name4" class="sp-name lato-black dark">Sammy Berky</p>
+              <p id="sp-title4" class="sp-title lato red">CTO at Google Dev Academy</p>
+              <div class="sp-indicator"></div>
+              <p id="sp-bio4" class="sp-bio lato dark">Sammy has a lot of experience about NLP technics and AI integration into Learning process.</p> 
+            </div>
+          </div>
+          <div id="speaker-card5" class="speaker-card">
+            <div id="sp-img5" class="sp-img"></div>
+            <div id="sp-info5" class="sp-info">
+              <p id="sp-name5" class="sp-name lato-black dark">Sammy Berky</p>
+              <p id="sp-title5" class="sp-title lato red">CTO at Google Dev Academy</p>
+              <div class="sp-indicator"></div>
+              <p id="sp-bio5" class="sp-bio lato dark">Sammy has a lot of experience about NLP technics and AI integration into Learning process.</p> 
+            </div>
+          </div>
+          <div id="speaker-card6" class="speaker-card">
+            <div id="sp-img6" class="sp-img"></div>
+            <div id="sp-info6" class="sp-info">
+              <p id="sp-name6" class="sp-name lato-black dark">Sammy Berky</p>
+              <p id="sp-title6" class="sp-title lato red">CTO at Google Dev Academy</p>
+              <div class="sp-indicator"></div>
+              <p id="sp-bio6" class="sp-bio lato dark">Sammy has a lot of experience about NLP technics and AI integration into Learning process.</p> 
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="partners" class="dark-bg">
+        <div id="heading-container3">
+          <h2 class="lato light section-heading" id="partners-heading">Partner</h2>
+          <div id="indicator2" class='indicator red-bg'></div>
+        </div>
+        <div id="partner-logo-container">
+          <div id="logo1" class="partner-logo"></div>
+          <div id="logo1" class="partner-logo"></div>
+          <div id="logo1" class="partner-logo"></div>
+          <div id="logo1" class="partner-logo"></div>
+          <div id="logo1" class="partner-logo"></div>
+          <div id="logo1" class="partner-logo"></div>
         </div>
       </section>
     </main>
     <footer>
-
+      <div id="logo-container">
+      </div>
+      <p id="copyright-txt" class="lato dark">2023 Code Wizards Academy - Some Rights Reserved</p>
     </footer>
   </body>
 </html>

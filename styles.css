@@ -20,8 +20,20 @@
   color: #ec5242
 }
 
+.red-bg {
+  background-color: #ec5242;
+}
+
 .dark {
   color: #272a31;
+}
+
+.dark-bg {
+  background-color: #272a31;
+}
+
+.white {
+  color: #fff;
 }
 
 .light {
@@ -56,6 +68,23 @@ ul {
   margin-block-start: 0;
 }
 
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-heading {
+  font-weight: 400;
+  font-size: 16px;
+}
+
 #user-menu-bar {
   width: 100vw;
   height: 3.5vh;
@@ -81,9 +110,10 @@ ul {
 }
 
 navbar {
-  position: fixed;
+  position: absolute;
   display: flex;
   top: 3vh;
+  left: 0;
   align-items: center;
   width: 100%;
   height: 7vh;
@@ -103,8 +133,17 @@ navbar {
   height: 16px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#home {
+  width: 100vw;
+  height: 60vh;
+}
+
 #home-bg-container {
-  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -158,4 +197,205 @@ navbar {
 
 #location-message {
   font-size: 14px;
+}
+
+#program-container {
+  background-image: url("images/program-bg-hq.jpg");
+  width: 100vw;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#heading-container,
+#heading-container2,
+#heading-container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 6vh;
+  gap: 5px;
+}
+
+.indicator {
+  width: 40%;
+  height: 2px;
+  border: solid 1px #ec5242;
+  border-radius: 2px;
+}
+
+#program-cards-container {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  height: 80%;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.pr-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background: rgba(78, 82, 90, 0.7);
+  gap: 20px;
+}
+
+#pr-card1 {
+  grid-row: 1/2;
+}
+
+#pr-card2 {
+  grid-row: 2/3;
+}
+
+.pr-card3 {
+  grid-row: 3/4;
+}
+
+.pr-card4 {
+  grid-row: 4/5;
+}
+
+.pr-card5 {
+  grid-row: 5/6;
+}
+
+.pr-card-icon {
+  padding-left: 24px;
+  font-size: 40px;
+}
+
+.pr-heading {
+  min-width: 112px;
+  font-size: 16px;
+}
+
+.pr-desc-text {
+  font-size: 14px;
+}
+
+#program-link {
+  text-decoration: underline;
+}
+
+#indicator2 {
+  width: 10%;
+}
+
+#speakers,
+#partners {
+  padding-bottom: 15px;
+}
+
+#sp-img1 {
+  background-image: url("images/sp-image1.png");
+}
+
+#sp-img2 {
+  background-image: url("images/sp-image2.png");
+}
+
+#sp-img3 {
+  background-image: url("images/sp-image3.png");
+}
+
+#sp-img4 {
+  background-image: url("images/sp-image4.png");
+}
+
+#sp-img5 {
+  background-image: url("images/sp-image5.png");
+}
+
+#sp-img6 {
+  background-image: url("images/sp-image6.png");
+}
+
+.sp-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 121.5px;
+  height: 121.5px;
+  min-width: 40.5px;
+}
+
+.sp-indicator {
+  border: solid 1px #3e3e3e;
+  border-radius: 2px;
+  width: 48px;
+}
+
+#speaker-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.speaker-card {
+  display: flex;
+  gap: 10px;
+  padding: 0 10px;
+  border: solid 1px #d3d3d3;
+}
+
+.sp-info {
+  padding-top: 15px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sp-name {
+  font-size: 15px;
+}
+
+.sp-title {
+  font-size: 13px;
+}
+
+.sp-bio {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+#partner-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.partner-logo {
+  width: 150px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#logo1 {
+  background-image: url("images/microverselogo.png");
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24px;
+  gap: 12px;
+}
+
+#copyright-txt {
+  width: 70%;
+  text-align: center;
 }
