@@ -275,6 +275,17 @@ main {
   border: solid 1px #d3d3d3;
 }
 
+#test-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#testamonials-heading {
+  width: 80%;
+}
+
 #testamonials-text {
   width: 80%;
   text-align: center;
@@ -314,6 +325,7 @@ main {
 
 .test-detail-txt {
   text-align: center;
+  width: 70%;
 }
 
 #partners {
