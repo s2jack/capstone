@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="desktop_styles.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="desktop-styles.css" media="screen and (min-width: 768px)">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Wizards Academy Official Website</title>
@@ -26,19 +26,20 @@
           <li id="logOut" class="user-menu-element lato">Logout</li>
         </ul>
       </div>
-      <navbar>
+      <navbar class="navbar">
         <div id="logo-container">
         </div>
         <div id="menu-container">
           <ul id="menu-list">
-            <li class="menu-element" id="about-link">About</li>
-            <li class="menu-element" id="about-link">Program</li>
-            <li class="menu-element" id="about-link">Join</li>
-            <li class="menu-element" id="about-link">Curriculum</li>
-            <li class="menu-element" id="about-link">News</li>
+            <li class="menu-element" id="about-link"><a class="lato dark" href="about.html">About</a></li>
+            <li class="menu-element" id="about-link"><a class="lato dark" href="#program">Program</a></li>
+            <li class="menu-element" id="about-link"><a class="lato dark" href="#program">Join</a></li>
+            <li class="menu-element" id="about-link"><a class="lato dark" href="#program">Curriculum</a></li>
+            <li class="menu-element" id="about-link"><a class="lato dark" href="#program">News</a></li>
           </ul>
+          <i id="closeIcon" class="fa-solid fa-xmark"></i>
         </div>
-        <div id="enroll-button">Enroll Now</div>
+        <div id="enroll-button" class="lato red">Enroll Now</div>
         <i id="hamburger-icon" class="fa-solid fa-bars"></i>
       </navbar>
     </header>
@@ -47,7 +48,9 @@
         <div id="home-bg-container">
           <div id="home-content-container">
             <h2 id="greeting-message" class="lato red">"Hello! Coders of the future"</h2>
-            <h1 id="main-message" class="lato-black red">CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
+            <h1 id="main-message" class="lato-black red">
+              Code Wizards Academy Summer Classes 2023
+            </h1>
             <div id="det-message-container" class="light-bg">
               <p id="det-message" class="lato dark">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
@@ -103,12 +106,13 @@
               </p>
             </div>
           </div>
+          <button id="join-btn" class="red-bg lato white">Join CWA Full-Stack Program</button>
           <a id="program-link" class="lato white">SEE THE WHOLE PROGRAM</a>
         </div>
       </section>
       <section id="speakers">
         <div id="heading-container2">
-          <h2 class="lato dark section-heading" id="speakers-heading">Featured Speakers</h2>
+          <h2 class="lato dark section-heading" id="speakers-heading">Instructors</h2>
           <div id="indicator2" class='indicator red-bg'></div>
         </div>
         <div id="speaker-cards-container">
@@ -171,15 +175,18 @@
       <section id="partners" class="dark-bg">
         <div id="heading-container3">
           <h2 class="lato light section-heading" id="partners-heading">Partner</h2>
-          <div id="indicator2" class='indicator red-bg'></div>
+          <div id="indicator4" class='indicator red-bg'></div>
         </div>
         <div id="partner-logo-container">
-          <div id="logo1" class="partner-logo"></div>
-          <div id="logo1" class="partner-logo"></div>
-          <div id="logo1" class="partner-logo"></div>
-          <div id="logo1" class="partner-logo"></div>
-          <div id="logo1" class="partner-logo"></div>
-          <div id="logo1" class="partner-logo"></div>
+          <div class="part-logo-cont">
+            <div id="logo1" class="partner-logo"></div>
+            <div id="logo1" class="partner-logo"></div>
+            <div id="logo1" class="partner-logo"></div>
+          </div>
+          <div class="part-logo-cont">
+            <div div id="logo1" class="partner-logo"></div>
+            <div id="logo1" class="partner-logo"></div>
+          </div>
         </div>
       </section>
     </main>
@@ -188,5 +195,6 @@
       </div>
       <p id="copyright-txt" class="lato dark">2023 Code Wizards Academy - Some Rights Reserved</p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
