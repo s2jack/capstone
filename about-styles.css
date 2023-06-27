@@ -328,9 +328,9 @@ footer {
   justify-content: space-around;
   gap: 36px;
   width: 100vw;
-  min-height: 180px;
+  min-height: 124px;
 }
 
 #copyright-txt {
-  font-size: 14px;
+  font-size: 12px;
 }
