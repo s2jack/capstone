@@ -419,9 +419,8 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 24px;
   gap: 12px;
-  padding: 12px;
+  padding: 24px 12px 12px 12px;
 }
 
 #copyright-txt {
