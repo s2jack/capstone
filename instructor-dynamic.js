@@ -61,31 +61,32 @@ const loadInstructor = (data) => {
   cardCont.id = 'speaker-cards-container';
   section.appendChild(cardCont);
 
-  for (let i = 0; i < data.length; i++) {
+  for (let i = 0; i < data.length; i += 1) {
     const order = i + 1;
-    const instructorCard = document.createElement('div')
-    instructorCard.id = 'speaker-card' + order.toString();
+    const instructorCard = document.createElement('div');
+    instructorCard.id = `speaker-card${order}`;
     instructorCard.className = 'speaker-card';
     cardCont.appendChild(instructorCard);
 
     const cardImg = document.createElement('div');
-    cardImg.id = 'sp-img' + order.toString();
+    cardImg.id = `sp-img${order}`;
     cardImg.className = 'sp-img';
-    cardImg.style = 'background-image: ' + data[i].image + ';'
+    const imgLink = data[i].image;
+    cardImg.style = `background-image: ${imgLink};`;
     instructorCard.appendChild(cardImg);
 
     const cardInfo = document.createElement('div');
-    cardInfo.id = 'sp-info' + order.toString();
+    cardInfo.id = `sp-info${order}`;
     cardInfo.className = 'sp-info';
     instructorCard.appendChild(cardInfo);
 
     const cardName = document.createElement('p');
-    cardName.id = 'sp-name' + order.toString();
+    cardName.id = `sp-name${order}`;
     cardName.className = 'sp-name lato-black dark';
     cardName.innerText = data[i].name;
     cardInfo.appendChild(cardName);
     const cardTitle = document.createElement('p');
-    cardTitle.id = 'sp-title' + order.toString();
+    cardTitle.id = `sp-title${order}`;
     cardTitle.className = 'sp-title lato red';
     cardTitle.innerText = data[i].title;
     cardInfo.appendChild(cardTitle);
@@ -93,11 +94,11 @@ const loadInstructor = (data) => {
     cardIndicator.className = 'sp-indicator';
     cardInfo.appendChild(cardIndicator);
     const cardBio = document.createElement('p');
-    cardBio.id = 'sp-bio' + order.toString();
+    cardBio.id = `sp-bio${order}`;
     cardBio.className = 'sp-bio lato dark';
     cardBio.innerText = data[i].detail;
     cardInfo.appendChild(cardBio);
-  };
+  }
 };
 
 loadInstructor(InstructorsDataBase);
