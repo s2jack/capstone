@@ -36,6 +36,10 @@
   color: #fff;
 }
 
+.white-bg {
+  background-color: #fff;
+}
+
 .light {
   color: #d3d3d3;
 }
@@ -84,7 +88,7 @@ body {
 }
 
 .section-heading {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
 }
 
@@ -130,6 +134,7 @@ navbar {
   width: 100%;
   height: 7vh;
   justify-content: space-between;
+  background-color: unset;
 }
 
 .menu-element {
@@ -383,6 +388,7 @@ main {
 
 .sp-title {
   font-size: 13px;
+  font-style: italic;
 }
 
 .sp-bio {
@@ -429,4 +435,8 @@ footer {
   align-items: center;
   justify-content: space-around;
   gap: 12px;
+}
+
+#indicator4 {
+  width: 9%;
 }
