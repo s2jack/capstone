@@ -17,7 +17,7 @@
 }
 
 .red {
-  color: #ec5242
+  color: #ec5242;
 }
 
 .red-bg {
@@ -70,10 +70,10 @@
   justify-content: center;
 }
 
-navbar {
+.navbar {
   top: 3.5vh;
   justify-content: space-around;
-  box-shadow: 0px 8px 5px -8px #272a31;
+  box-shadow: 0 8px 5px -8px #272a31;
   background-color: #fff;
 }
 
